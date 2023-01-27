@@ -7,5 +7,9 @@ body {
 }
 
 .barra {
+    display: grid;
+}
+button.barra {
+    
 	display: inline-block;
 }
