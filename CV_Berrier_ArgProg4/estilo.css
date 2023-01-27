@@ -7,9 +7,13 @@ body {
 }
 
 .barra {
-    display: grid;
+    float: right;
 }
 button.barra {
     
 	display: inline-block;
+}
+
+.main {
+	float: left;
 }
