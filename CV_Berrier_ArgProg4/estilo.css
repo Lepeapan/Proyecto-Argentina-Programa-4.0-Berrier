@@ -1,0 +1,11 @@
+
+body {
+	background-color: rgb(253, 254, 255);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.barra {
+	display: inline-block;
+}
