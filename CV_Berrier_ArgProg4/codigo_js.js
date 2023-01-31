@@ -5,8 +5,8 @@ let usuario
 fetch('https://randomuser.me/api/1.4/?gender=male')
   .then((response) => response.json())
   .then(data => {usuario = data.results[0];})
-  //.then(() => {console.log(usuario);});  
-console.log(usuario);
+  .then(() => {console.log(usuario);});  
+//console.log(usuario);
 
 /** -------------------codigo de MEDIUM.com---------------------- */
 
@@ -25,3 +25,25 @@ console.log(usuario);
 //console.log(apiData)
 
 
+function DatosPersonales(){
+  document.getElementsById("DatosPersonales").style.display = "float";
+}
+function Objetivo(){
+  document.getElementById("Objetivo").style.display = "float";
+}
+
+function Experiencia(){
+  document.getElementById("Experiencia").style.display = "float";
+}
+
+function Idiomas(){
+  document.getElementById("Idiomas").style.display = "float";
+}
+
+function Educacion(){
+  document.getElementById("Educacion").style.display = "float";
+}
+
+function Cursos(){
+  document.getElementById("Cursos").style.display = "float";
+}  
