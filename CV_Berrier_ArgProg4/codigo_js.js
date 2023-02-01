@@ -23,27 +23,21 @@ fetch('https://randomuser.me/api/1.4/?gender=male')
 //   console.log(apiData)
 // }
 //console.log(apiData)
-
-
-function DatosPersonales(){
-  document.getElementsById("DatosPersonales").style.display = "float";
+/** ------------------------------------------------------------ */
+document.getElementById("boton_DatosPersonales").onclick = function() {
+  Contenido('DatosPersonales');
 }
-function Objetivo(){
-  document.getElementById("Objetivo").style.display = "float";
+//document.getElementsByClassName("escondido").style.display = 'none'
+let contador=0
+function Contenido(ID){
+  let elemento = document.getElementById(ID);
+  if (elemento.style.display == 'none') {
+    elemento.style.display = 'block';
+    }else {
+    elemento.style.display = 'none';
+  }
+  
+  //esta parte es para chequear el funcionamiento de los botones en la etapa de desarrollo//
+  contador+=1;
+  console.log("se presionó el boton "+ID+". En total se hicieron "+contador+" clicks");
 }
-
-function Experiencia(){
-  document.getElementById("Experiencia").style.display = "float";
-}
-
-function Idiomas(){
-  document.getElementById("Idiomas").style.display = "float";
-}
-
-function Educacion(){
-  document.getElementById("Educacion").style.display = "float";
-}
-
-function Cursos(){
-  document.getElementById("Cursos").style.display = "float";
-}  

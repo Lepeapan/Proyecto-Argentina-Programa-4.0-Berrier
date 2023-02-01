@@ -12,7 +12,7 @@
     <title>Curriculum Vitae</title>
     <link rel="shortcut icon" href="imagenes/favicon.png" type="image/x-icon" />
     <link rel="stylesheet" href="estilo.css" />
-    <script src="codigo_js.js"></script>
+    <script src="codigo_js.js" defer></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@300&display=swap" rel="stylesheet">
@@ -53,7 +53,7 @@
         </div>
         <div class="container_2">
             <main>
-                <section  id="DatosPersonales">
+                <section  id="DatosPersonales" class="escondido">
                     <h2>Titulo de la seccion que se muestra</h2>
                         <ul>
                             <li><h3>Nombre: </h3>Juan delos</li>
@@ -63,7 +63,7 @@
                             <li><h3>DNI: </h3>98.765.432</li>
                         </ul>
                 </section>
-                <section id="Objetivo">
+                <section id="Objetivo" class="escondido">
                     <h2>Objetivo:</h2>
                         <p> Proin mattis a nulla ac condimentum. Nullam vel tortor at enim eleifend suscipit a eget enim.
                             Mauris consequat ipsum metus, eu iaculis ipsum pretium eget. Vivamus ultricies rutrum ligula,
@@ -73,7 +73,7 @@
                             Nullam id dolor nec ante laoreet bibendum eu sed metus.
                         </p>
                 </section>
-                <section id="Experiencia">
+                <section id="Experiencia" class="escondido">
                     <h2>Experiencia:</h2>
                         <p> Proin mattis a nulla ac condimentum. Nullam vel tortor at enim eleifend suscipit a eget enim.
                             Mauris consequat ipsum metus, eu iaculis ipsum pretium eget. Vivamus ultricies rutrum ligula,
@@ -83,7 +83,7 @@
                             Nullam id dolor nec ante laoreet bibendum eu sed metus.
                         </p>
                 </section>
-                <section id="Idiomas">
+                <section id="Idiomas" class="escondido">
                     <h2>Idiomas:</h2>
                         <p> Proin mattis a nulla ac condimentum. Nullam vel tortor at enim eleifend suscipit a eget enim.
                             Mauris consequat ipsum metus, eu iaculis ipsum pretium eget. Vivamus ultricies rutrum ligula,
@@ -93,7 +93,7 @@
                             Nullam id dolor nec ante laoreet bibendum eu sed metus.
                         </p>
                 </section>  
-                <section id="Educacion">
+                <section id="Educacion" class="escondido">
                     <h2>Educacion:</h2>
                         <p> Proin mattis a nulla ac condimentum. Nullam vel tortor at enim eleifend suscipit a eget enim.
                             Mauris consequat ipsum metus, eu iaculis ipsum pretium eget. Vivamus ultricies rutrum ligula,
@@ -103,7 +103,7 @@
                             Nullam id dolor nec ante laoreet bibendum eu sed metus.
                         </p>
                 </section>  
-                <section id="Cursos">
+                <section id="Cursos" class="escondido">
                     <h2>Cursos:</h2>
                         <p> Proin mattis a nulla ac condimentum. Nullam vel tortor at enim eleifend suscipit a eget enim.
                             Mauris consequat ipsum metus, eu iaculis ipsum pretium eget. Vivamus ultricies rutrum ligula,
@@ -116,12 +116,12 @@
                 <!-- aca se muestra la informacion de la seccion que se elija-->
             </main>
             <aside>
-                <button class="barra" id="boton_DatosPersonales" onclick="DatosPersonales()"><i class="fa-solid fa-address-card"></i> Datos Personales</button>
-                <button class="barra" id="boton_Objetivo" onclick="Objetivo()"><i class="fa-solid fa-bullseye"></i> Objetivo</button>
-                <button class="barra" id="boton_Experiencia" onclick="Experiencia()"><i class="fa-solid fa-business-time"></i> Experiencia</button>
-                <button class="barra" id="boton_Idiomas" onclick="Idiomas()"><i class="fa-solid fa-earth-americas"></i> Idiomas</button>
-                <button class="barra" id="boton_Educacion" onclick="Educacion()"><i class="fa-solid fa-graduation-cap"></i> Educacion</button><!--puede ser "fa-user-graduate" también-->
-                <button class="barra" id="boton_Cursos" onclick="Cursos()"><i class="fa-solid fa-book"></i> Cursos</button><!--puede ser "fa-pen-ruler" también-->
+                <button class="barra" id="boton_DatosPersonales"><i class="fa-solid fa-address-card"></i> Datos Personales</button>
+                <button class="barra" id="boton_Objetivo" onclick="Contenido('Objetivo')"><i class="fa-solid fa-bullseye"></i> Objetivo</button>
+                <button class="barra" id="boton_Experiencia" onclick="Contenido('Experiencia')"><i class="fa-solid fa-business-time"></i> Experiencia</button>
+                <button class="barra" id="boton_Idiomas" onclick="Contenido('Idiomas')"><i class="fa-solid fa-earth-americas"></i> Idiomas</button>
+                <button class="barra" id="boton_Educacion" onclick="Contenido('Educacion')"><i class="fa-solid fa-graduation-cap"></i> Educacion</button><!--puede ser "fa-user-graduate" también-->
+                <button class="barra" id="boton_Cursos" onclick="Contenido('Cursos')"><i class="fa-solid fa-book"></i> Cursos</button><!--puede ser "fa-pen-ruler" también-->
             </aside>
         </div>
         <footer class="links">
