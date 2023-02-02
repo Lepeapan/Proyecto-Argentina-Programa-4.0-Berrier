@@ -31,10 +31,10 @@ document.getElementById("boton_DatosPersonales").onclick = function() {
 let contador=0
 function Contenido(ID){
   let elemento = document.getElementById(ID);
-  if (elemento.style.display == 'none') {
-    elemento.style.display = 'block';
-    }else {
+  if (elemento.style.display == 'block') {
     elemento.style.display = 'none';
+    }else {
+    elemento.style.display = 'block';
   }
   
   //esta parte es para chequear el funcionamiento de los botones en la etapa de desarrollo//
