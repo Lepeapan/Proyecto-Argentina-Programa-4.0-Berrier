@@ -23,9 +23,13 @@ h1{
   	}
 	img {
 	max-width: 120%;
+	align-self: flex-end;
   	}
   	.imagen {
-	padding: 10px 20px 10px 40px;
+	align-items: center;
+	align-content: center;
+	background-color: white;
+	border-left: 1px solid black;
 	flex-basis: 20%;
 	order: 2;
   	}
@@ -42,21 +46,26 @@ h1{
 	aside {
     display: flex;
 	flex-direction: column;
-	background-color: darkcyan;
+	align-items: center;
+	background-color: white;
+	margin-left: 20px;
+	border-left: 1px solid black;
 	flex-basis: 20%;
 	order: 2;
 	}
 	button.barra {
 	height: 3vw;
-	width: 8vw;
+	width: 100%;
 	padding: 30px 30px;
+	justify-content: center;
 	font-size: larger;
-	background-color: red;
+	background-color: rgb(163, 155, 155);
 	justify-self: center;
 	}
  	main {
 	flex-basis: 80%;
 	order: 1;
+	margin-right: 20px;
 	}
 		#DatosPersonales {
 			display: none;
