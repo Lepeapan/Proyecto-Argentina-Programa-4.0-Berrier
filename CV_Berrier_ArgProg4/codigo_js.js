@@ -10,14 +10,17 @@
 
 
 //*-------------------------------------------intentando que ande como función----------------------------------------//
-  let usuario
+  let datos
   function ObtenerDatos(usuario) {
     fetch('https://randomuser.me/api/1.4/?gender=male')
       .then((response) => response.json())
       .then(data => {usuario = data.results[0];})
       .then(() => {console.log(usuario);});
+      return(usuario);
   }
-//console.log(usuario);
+  console.log(datos)
+  datos=ObtenerDatos(datos)
+  console.log(datos);
 
 /** -------------------codigo de MEDIUM.com---------------------- */
 
@@ -34,6 +37,12 @@
 //   console.log(apiData)
 // }
 //console.log(apiData)
+/** ------------------------------------------------------------ */
+async function ObtenerDatos2(){
+  const RespuestaDeFetch = await fetch('https://randomuser.me/api/1.4/?gender=male');
+  const data = await RespuestaDeFetch.json;
+  let DatosDeUsuario = data.results[0];
+}
 /** ------------------------------------------------------------ */
 document.getElementById("boton_DatosPersonales").onclick = function() {
   Contenido('DatosPersonales');
