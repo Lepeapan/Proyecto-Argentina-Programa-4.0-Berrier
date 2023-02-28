@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Leandro Berrier" />
+    <meta
+        name="description"
+        content="Ejemplo de CV realizado como trabajo final para el curso de Frontend de argentina Programa 4.0"
+    />
+    <title>Curriculum Vitae</title>
+    <link rel="shortcut icon" href="imagenes/favicon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="estilo.css" />
+    <script src="codigo_js.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@300&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a4e813acdb.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div>
+        <div class="banner">
+            <article class="contacto">
+                <h1 id="info_de_h1">
+                    Nombre de Ejemplo <br>
+                    <a href="https://api.whatsapp.com/send?phone=0123456789&text=Hola, te estamos contactando desde el CV web">telefono</a> <br>
+                    <a href="mailto:berrierleandro@gmail.com?Subject=Contacto%20desde%20CV%20web%20">email</a> 
+                </h1>
+            </article>
+        </div>
+        <div>
+        <header>
+            <div class="container_1">
+                <div class="resumen">
+                    <h2>Resumen del CV</h2><p>Chamullador Junior con bastante experiencia en escribir "hola mundo" en varios lenguajes de programacion.
+                         Actualmete aprendiendo frontend en tickmas academy y descubriendo el maravilloso mundo del html y JS.</p>
+                    </div>
+                    <div class="marco">
+                        <img  id="foto" src='https://randomuser.me/api/portraits/men/29.jpg' alt="aqui va la imagen obtenida de randomuser.me">
+                    </div>
+            </div>
+        </header>
+        </div>
+        <div class="container_2">
+            <main>
+                <section id="recibidor">Presione los botones para mostrar la información aquí</section>
+                <section  id="DatosPersonales" class="escondido">
+                    <h2>DatosPersonales</h2>
+                        <ul>
+                            <li id="Nombre"><h3>Nombre: </h3>Juan delos</li>
+                            <li id="Apellido"><h3>Apellido: </h3>Palotes</li>
+                            <li id="Nacimiento"><h3>Fecha de Nacimiento: </h3>01/01/0001</li>
+                            <li id="Domicilio"><h3>Domicilio: </h3>Calle sin nombre 1234</li>
+                            <li id="DNI"><h3>DNI: </h3>98.765.432</li>
+                        </ul>
+                </section>
+                <section id="Objetivo" class="escondido">
+                    <h2>Objetivo:</h2>
+                        <p> Aprobar el curso de frontend de tickmas academy para poder pasar al siguiente nivel de Argentina programa 4.0
+                            yyyyy... lo que no es menor... no morir en el intento.
+                        </p>
+                </section>
+                <section id="Experiencia" class="escondido">
+                    <h2>Experiencia:</h2>
+                        <p> le soluciono problemas de la compu a mis viejos cuando se le atan las ramas desde el 2000<br>
+                            mas de 20 años de formateo de compus para "limpiarlas" cuando andan lentas... yo use windows 3.1
+                            manejo el MS-DOS como un campeon.
+                        </p>
+                </section>
+                <section id="Idiomas" class="escondido">
+                    <h2>Idiomas:</h2>
+                        <p> te falo el portugues, te parlo el italiano y hago re bostaza el cordoooobes. ahh, tambien manejo algo de latin... te dejo un ejemplo: 
+                            Proin mattis a nulla ac condimentum. Nullam vel tortor at enim eleifend suscipit a eget enim.
+                            Mauris consequat ipsum metus, eu iaculis ipsum pretium eget. Vivamus ultricies rutrum ligula,
+                            vel lacinia risus dignissim at. In hac habitasse platea dictumst. Quisque sit amet cursus tellus,
+                            in pharetra sapien. Nunc sit amet libero est. Aenean enim lorem, ultrices sit amet hendrerit in,
+                            egestas non velit. Nulla id mi risus. Sed accumsan magna erat, eget dignissim metus pharetra id.
+                            Nullam id dolor nec ante laoreet bibendum eu sed metus.
+                        </p>
+                </section>  
+                <section id="Educacion" class="escondido">
+                    <h2>Educacion:</h2>
+                        <p> primario, secundario y universitario completo... listo para atender un kiosko.
+                        </p>
+                </section>  
+                <section id="Cursos" class="escondido">
+                    <h2>Cursos:</h2>
+                        <p> Curso basico de python en edx,<br>
+                            curso basico de argentina programa <br>
+                            curso de frontend en tickmas academy
+                        </p>
+                </section>       
+            </main>
+            <aside>
+                <button class="barra" id="boton_DatosPersonales" onclick="Contenido('DatosPersonales')"><i class="fa-solid fa-address-card"></i> Datos Personales</button>
+                <button class="barra" id="boton_Objetivo" onclick="Contenido('Objetivo')"><i class="fa-solid fa-bullseye"></i> Objetivo</button>
+                <button class="barra" id="boton_Experiencia" onclick="Contenido('Experiencia')"><i class="fa-solid fa-business-time"></i> Experiencia</button>
+                <button class="barra" id="boton_Idiomas" onclick="Contenido('Idiomas')"><i class="fa-solid fa-earth-americas"></i> Idiomas</button>
+                <button class="barra" id="boton_Educacion" onclick="Contenido('Educacion')"><i class="fa-solid fa-graduation-cap"></i> Educacion</button><!--puede ser "fa-user-graduate" también-->
+                <button class="barra" id="boton_Cursos" onclick="Contenido('Cursos')"><i class="fa-solid fa-book"></i> Cursos</button><!--puede ser "fa-pen-ruler" también-->
+            </aside>
+        </div>
+        <footer class="links">
+                <!-- link a la web de donde se obtuvo el Favicon, requisito para su uso gratuito-->
+            <a  target="_blank" href="https://icons8.com/icon/ssvbWITVTVC5/contactos"> Favicon</a> 
+            obtenido de:<a target="_blank" href="https://icons8.com">Icons8</a>
+            <p> Iconos de botones obtenidos de <a target="_blank" href="https://fontawesome.com/">FontAwesome</a></p>
+        </footer>
+    </div>    
+</body>
+</html>
