@@ -1,39 +1,46 @@
+/* estilo  CSS para nuetro CV html*/
 
 body {
 	background-color: rgb(165, 180, 174);
 	font-family: 'Heebo', sans-serif;
-	display: flex;
 }
 
 
 h1{
 	text-align: center;
 	background-color: rgba(34, 110, 37, 0.575);
+	font-size: 220%;
+}
+h2{
+	font-size: 200%;
+}
+h3{
+	font-size: 150%;
+}
+p{
+	font-size: 130%;
+}
+li{
+	font-size: 130%;
+}
+a{
+	font-size: 130%;
 }
 .container_1 {
 	padding: 1%;
-	border-bottom: 2px ridge blue;
+	border-bottom: 2px ridge  rgba(34, 110, 37, 0.575);
 	display: flex;
-	align-items: center;
-	justify-content: center
-  	}
-	img {
-	max-width: 120%;
   	}
   	.marco {
 	display: flex;
-	align-items: center;
-	align-content: center;
-	justify-content: center;
 	border-left: 1px solid black;
 	margin-left: 20px;
 	padding-left: 1%;
 	flex-basis: 20%;
-	height: 20%;
-	order: 2;
+	height: 250px;
   	}
 		#foto{
-			max-width: 150%;
+			max-width: 100%;
 		}
   	.resumen {
 	color: #141313;
@@ -41,16 +48,14 @@ h1{
 }
 .container_2 {
 	display: flex;
-	align-items: center;
-	justify-content: center
+	justify-content: space-between;
   	}
 	aside {
 	position: -webkit-sticky;
  	position: sticky;
   	top: 0;
-    display: flex;
-	flex-direction: column;
-	align-items: center;
+	height: 40%;
+    flex-direction: column;
 	padding-left: 20px;
 	margin-left: 20px;
 	border-left: 1px solid black;
@@ -97,4 +102,5 @@ footer {
 	border:2px solid #141313 ;
 	background-color: rgba(34, 110, 37, 0.575);
 	padding: 1%;
+	font-size: 110%;
 }
