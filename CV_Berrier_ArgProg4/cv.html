@@ -22,12 +22,11 @@
     <div>
         <div class="banner">
             <article class="contacto">
-                <h1>
-                    nombre <br>
+                <h1 id="info_de_h1">
+                    Nombre de Ejemplo <br>
                     <a href="https://api.whatsapp.com/send?phone=0123456789&text=Hola, te estamos contactando desde el CV web">telefono</a> <br>
                     <a href="mailto:berrierleandro@gmail.com?Subject=Contacto%20desde%20CV%20web%20">email</a> <!--modificar el href con los datos de correo aleatorio-->
                 </h1>
-                <!-- ver si se pueden poner tipo link directo-->
             </article>
         </div>
         <div>
@@ -45,22 +44,23 @@
                         pretium at eget urna. In at gravida augue. Morbi tempor, ante a bibendum egestas, <br>
                         ante enim faucibus est, sed luctus arcu lacus eu ligula. Sed tincidunt vehicula finibus.</p>
                     </div>
-                    <div class="imagen">
-                        <img  src='https://randomuser.me/api/portraits/men/29.jpg' alt="aqui va la imagen obtenida de randomuser.me">
+                    <div class="marco">
+                        <img  id="foto" src='https://randomuser.me/api/portraits/men/29.jpg' alt="aqui va la imagen obtenida de randomuser.me">
                     </div>
             </div>
         </header>
         </div>
         <div class="container_2">
             <main>
+                <section id="recibidor">Presione los botones para mostrar la información aquí</section>
                 <section  id="DatosPersonales" class="escondido">
-                    <h2>Titulo de la seccion que se muestra</h2>
+                    <h2>DatosPersonales</h2>
                         <ul>
-                            <li><h3>Nombre: </h3>Juan delos</li>
-                            <li><h3>Apellido: </h3>Palotes</li>
-                            <li><h3>Fecha de Nacimiento: </h3>01/01/0001</li>
-                            <li><h3>Domicilio: </h3>Calle sin nombre 1234</li>
-                            <li><h3>DNI: </h3>98.765.432</li>
+                            <li id="Nombre"><h3>Nombre: </h3>Juan delos</li>
+                            <li id="Apellido"><h3>Apellido: </h3>Palotes</li>
+                            <li id="Nacimiento"><h3>Fecha de Nacimiento: </h3>01/01/0001</li>
+                            <li id="Domicilio"><h3>Domicilio: </h3>Calle sin nombre 1234</li>
+                            <li id="DNI"><h3>DNI: </h3>98.765.432</li>
                         </ul>
                 </section>
                 <section id="Objetivo" class="escondido">
@@ -115,7 +115,7 @@
                 </section>       
             </main>
             <aside>
-                <button class="barra" id="boton_DatosPersonales"><i class="fa-solid fa-address-card"></i> Datos Personales</button>
+                <button class="barra" id="boton_DatosPersonales" onclick="Contenido('DatosPersonales')"><i class="fa-solid fa-address-card"></i> Datos Personales</button>
                 <button class="barra" id="boton_Objetivo" onclick="Contenido('Objetivo')"><i class="fa-solid fa-bullseye"></i> Objetivo</button>
                 <button class="barra" id="boton_Experiencia" onclick="Contenido('Experiencia')"><i class="fa-solid fa-business-time"></i> Experiencia</button>
                 <button class="barra" id="boton_Idiomas" onclick="Contenido('Idiomas')"><i class="fa-solid fa-earth-americas"></i> Idiomas</button>

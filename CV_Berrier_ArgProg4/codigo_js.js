@@ -1,54 +1,51 @@
 /** código utilizado para darle animacion y funcionalidad al Proyecto */
 
-/** de la página sugerida para obtener datos aleatorios se obtiene información del usuario */
-/** Esto está andando */
-// let usuario
-// fetch('https://randomuser.me/api/1.4/?gender=male')
-//   .then((response) => response.json())
-//   .then(data => {usuario = data.results[0];})
-//   .then(() => {console.log(usuario);});  
+/** Utilizamos la API de la página sugerida para obtener datos aleatorios y completar la información del usuario */
 
+var datosDeUsuario = {}
 
-//*-------------------------------------------intentando que ande como función----------------------------------------//
-  let datos
-  function ObtenerDatos(usuario) {
-    fetch('https://randomuser.me/api/1.4/?gender=male')
-      .then((response) => response.json())
-      .then(data => {usuario = data.results[0];})
-      .then(() => {console.log(usuario);});
-      return(usuario);
-  }
+function ObtenerDatos() {
+
+  fetch('https://randomuser.me/api/1.4/?gender=male')
+  .then((response) => {response.json()
+    .then(data => {datos = [data.results[0]];
+    console.log(datos);
+    MostrarDatos(datos[0]);
+    })
+    .catch(error => console.log(error));
+  })
+  .catch(error => console.log(error))
+}
+
+function MostrarDatos(datos) {
   console.log(datos)
-  datos=ObtenerDatos(datos)
-  console.log(datos);
-
-/** -------------------codigo de MEDIUM.com---------------------- */
-
-// const apiData = () => {
-//     fetch('https://randomuser.me/api/1.4/?gender=male')
-//       .then((response) => {
-//         return response.json()
-//     }).then((data) => {
-//         fetchedData(data)
-//     })
-// }
-
-// fetchedData = (apiData) => {
-//   console.log(apiData)
-// }
-//console.log(apiData)
-/** ------------------------------------------------------------ */
-async function ObtenerDatos2(){
-  const RespuestaDeFetch = await fetch('https://randomuser.me/api/1.4/?gender=male');
-  const data = await RespuestaDeFetch.json;
-  let DatosDeUsuario = data.results[0];
+  let dob = datos.dob.date
+  let fechaNac = dob.substring(0,10);
+  document.getElementById('info_de_h1').innerText= 
+    `${datos.name.first} ${datos.name.last}
+     ${datos.cell}
+     ${datos.email}`;
+  document.getElementById('Nombre').innerHTML=
+      '<h3>Nombre: </h3>'+`${datos.name.first}`
+  document.getElementById('Apellido').innerHTML=
+      '<h3>Apellido: </h3>'+`${datos.name.last}`
+  document.getElementById('Nacimiento').innerHTML=
+      '<h3>Nacimiento: </h3>'+fechaNac
+  document.getElementById('Domicilio').innerHTML=
+      '<h3>Domicilio: </h3>'+`${datos.location.street.name} ${datos.location.street.number}, ${datos.location.city}, ${datos.location.country}`
+  document.getElementById('DNI').innerHTML=
+      '<h3>DNI: </h3>'+`${datos.id.value}`
+  document.getElementById('foto').src = datos.picture.large
 }
-/** ------------------------------------------------------------ */
-document.getElementById("boton_DatosPersonales").onclick = function() {
-  Contenido('DatosPersonales');
-}
-//document.getElementsByClassName("escondido").style.display = 'none'
-let contador=0
+
+
+window.onload = () => {ObtenerDatos()};
+
+
+// /** ---------------------------Codigo para los botones de la barra lateral--------------------------------- */
+
+document.addEventListener('click', () => {document.getElementById("recibidor").style.display ='none'});
+
 function Contenido(ID){
   let elemento = document.getElementById(ID);
   if (elemento.style.display == 'block') {
@@ -56,8 +53,4 @@ function Contenido(ID){
     }else {
     elemento.style.display = 'block';
   }
-  
-  //esta parte es para chequear el funcionamiento de los botones en la etapa de desarrollo//
-  contador+=1;
-  console.log("se presionó el boton "+ID+". En total se hicieron "+contador+" clicks");
 }
