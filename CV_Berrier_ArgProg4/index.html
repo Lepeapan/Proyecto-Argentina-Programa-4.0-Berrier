@@ -32,18 +32,18 @@
         <div>
         <header>
             <div class="grid-container container_1">
-                <div class="resumen">
+                <div class="grid-container resumen">
                     <h2>Resumen del CV</h2><p>Chamullador Junior con bastante experiencia en escribir "hola mundo" en varios lenguajes de programacion.
                          Actualmete aprendiendo frontend en tickmas academy y descubriendo el maravilloso mundo del html y JS.</p>
                     </div>
-                    <div class="marco">
+                    <div class="grid-container marco">
                         <img  id="foto" src='https://randomuser.me/api/portraits/men/29.jpg' alt="aqui va la imagen obtenida de randomuser.me">
                     </div>
             </div>
         </header>
         </div>
-        <div class="container_2">
-            <main>
+        <div class="grid-container container_2">
+            <main class="grid-container cuerpo">
                 <section id="recibidor">Presione los botones para mostrar la información aquí</section>
                 <section  id="DatosPersonales" class="escondido">
                     <h2>DatosPersonales</h2>
@@ -88,7 +88,7 @@
                         </p>
                 </section>       
             </main>
-            <aside>
+            <aside class="grid-container  botonera">
                 <button class="barra" id="boton_DatosPersonales" onclick="Contenido('DatosPersonales')"><i class="fa-solid fa-address-card"></i> Datos Personales</button>
                 <button class="barra" id="boton_Objetivo" onclick="Contenido('Objetivo')"><i class="fa-solid fa-bullseye"></i> Objetivo</button>
                 <button class="barra" id="boton_Experiencia" onclick="Contenido('Experiencia')"><i class="fa-solid fa-business-time"></i> Experiencia</button>
@@ -97,7 +97,7 @@
                 <button class="barra" id="boton_Cursos" onclick="Contenido('Cursos')"><i class="fa-solid fa-book"></i> Cursos</button><!--puede ser "fa-pen-ruler" también-->
             </aside>
         </div>
-        <footer class="links">
+        <footer class="grid-container links">
                 <!-- link a la web de donde se obtuvo el Favicon, requisito para su uso gratuito-->
             <a  target="_blank" href="https://icons8.com/icon/ssvbWITVTVC5/contactos"> Favicon</a> 
             obtenido de:<a target="_blank" href="https://icons8.com">Icons8</a>

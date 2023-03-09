@@ -1,8 +1,9 @@
-/* estilo  CSS para nuetro CV html*/
+/* estilo  CSS para nuestro CV html*/
 
 body {
 	background-color: rgb(165, 180, 174);
 	font-family: 'Heebo', sans-serif;
+	box-sizing: border-box;
 }
 
 
@@ -28,14 +29,18 @@ a{
 }
 .grid-container {
 	display: grid;
+	grid-template-columns: 80% 20%;
+}
+.banner {
+
 }
 .container_1 {
 	padding: 1%;
 	border-bottom: 2px ridge  rgba(34, 110, 37, 0.575);
-	display: flex;
+	/* display: flex; */
   	}
   	.marco {
-	display: flex;
+	/* display: flex; */
 	border-left: 1px solid black;
 	margin-left: 20px;
 	padding-left: 1%;
@@ -48,10 +53,10 @@ a{
 		}
   	.resumen {
 	color: #141313;
-	flex-basis: 80%;
+	/* flex-basis: 80%; */
 }
 .container_2 {
-	display: flex;
+	/* display: flex; */
 	justify-content: space-between;
   	}
 	aside {
@@ -70,7 +75,7 @@ a{
 	height: 3vw;
 	width: 100%;
 	padding: 30px 30px;
-	justify-content: center;
+	justify-content: stretch;
 	font-size: larger;
 	background-color: rgba(34, 110, 37, 0.575);
 	justify-self: center;
