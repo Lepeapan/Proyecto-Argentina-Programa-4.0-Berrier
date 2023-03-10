@@ -53,7 +53,7 @@ function MostrarDatos(datos) {
 window.onload = () => {ObtenerDatos()};
 
 
-// /** ---------------------------Codigo para los botones de la barra lateral--------------------------------- */
+// /** --------------------------Codigo para los botones de la barra lateral--------------------------------- */
 
 document.addEventListener('click', () => {document.getElementById("recibidor").style.display ='none'});
 

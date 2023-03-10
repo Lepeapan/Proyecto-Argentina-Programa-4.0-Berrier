@@ -9,22 +9,22 @@ body {
 h1{
 	text-align: center;
 	background-color: rgba(34, 110, 37, 0.575);
-	font-size: 220%;
-}
-h2{
 	font-size: 200%;
 }
+h2{
+	font-size: 180%;
+}
 h3{
-	font-size: 150%;
+	font-size: 120%;
 }
 p{
-	font-size: 130%;
+	font-size: 120%;
 }
 li{
-	font-size: 130%;
+	font-size: 120%;
 }
 a{
-	font-size: 130%;
+	font-size: 100%;
 }
 .container_1 {
 	padding: 1%;
@@ -67,7 +67,7 @@ a{
 	width: 100%;
 	padding: 30px 30px;
 	justify-content: center;
-	font-size: larger;
+	font-size: medium;
 	background-color: rgba(34, 110, 37, 0.575);
 	justify-self: center;
 	}
@@ -104,3 +104,8 @@ footer {
 	padding: 1%;
 	font-size: 110%;
 }
+@media (max-width: 500px){ /*no llegue a hacerlo funcionar bien para pantallas pequeñas*/
+	* {
+flex-basis:100%
+	}
+} 
