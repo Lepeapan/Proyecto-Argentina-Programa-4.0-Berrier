@@ -16,9 +16,11 @@ h2{
 }
 h3{
 	font-size: 120%;
+	display: inline;
 }
 p{
 	font-size: 120%;
+	display: inline;
 }
 li{
 	font-size: 120%;
