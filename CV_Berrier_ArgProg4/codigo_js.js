@@ -59,9 +59,9 @@ document.addEventListener('click', () => {document.getElementById("recibidor").s
 
 function Contenido(ID){
   let elemento = document.getElementById(ID);
-  if (elemento.style.display == 'block') {
+  if (elemento.style.display == 'grid') {
     elemento.style.display = 'none';
     }else {
-    elemento.style.display = 'block';
+    elemento.style.display = 'grid';
   }
 }
