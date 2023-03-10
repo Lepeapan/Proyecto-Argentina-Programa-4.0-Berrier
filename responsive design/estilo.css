@@ -1,0 +1,152 @@
+/* estilo  CSS para nuestro CV html*/
+/* *. {
+	box-sizing: border-box;
+	display: grid;
+	grid-template-columns: 80% 20%;
+}
+body {
+	background-color: rgb(165, 180, 174);
+	font-family: 'Heebo', sans-serif;
+	box-sizing: border-box;
+	display: grid;
+}
+
+
+h1{
+	text-align: center;
+	background-color: rgba(34, 110, 37, 0.575);
+	font-size: 200%;
+}
+h2{
+	font-size: 200%;
+}
+h3{
+	font-size: 150%;
+}
+p{
+	font-size: 130%;
+}
+li{
+	font-size: 130%;
+}
+a{
+	font-size: 80%;
+}
+.grid-container {
+	display: grid;
+	grid-template-columns: 80% 20%;
+}
+.banner {
+	grid-column-start: 1;
+	grid-column-end: -1;
+}
+.contacto {
+	grid-column-start: 1;
+	grid-column-end: -1;
+}
+.container_1 {
+	grid-column-start: 1;
+	grid-column-end: -1;
+	padding: 1%;
+	border-bottom: 2px ridge  rgba(34, 110, 37, 0.575);
+  	}
+  	.marco {
+	border-left: 1px solid black;
+	margin-left: 2%;
+	padding-left: 1%;
+	height: auto;
+  	}
+		#foto{
+			max-width: 100%;
+			height: auto;
+		}
+  	.resumen {
+		grid-column-start: ;
+		grid-column-end: 2;
+	color: #141313;
+}
+.container_2 { */
+	/* justify-content: stretch; */
+	/* justify-content: stretch;
+  	}
+	aside {
+		justify-content: left;
+		justify-items: left;
+	grid-column-start: 2;
+	grid-column-end: 3;
+	position: -webkit-sticky;
+ 	position: sticky;
+  	top: 5%;
+    padding-left: 2%;
+	margin-left: 2%;
+	border-left: 1px solid black; */
+	/* order: 2; */
+	/* }
+	.botonera{
+		justify-content: left;
+		display: grid;
+		grid-column-start: 2;
+		grid-column-end: -1;
+	}
+	.barra {
+		justify-content: stretch;
+	display: grid;
+	grid-column-start: 2;
+	grid-column-end: -1; */
+	/* height: 3vw; */
+	/* padding: 3% 3%;
+	font-size: larger;
+	background-color: rgba(34, 110, 37, 0.575);
+	}
+ 	main {
+		justify-content: stretch;
+		display: grid;
+	order: 1;
+	margin-right: 2%;
+	}
+	div.container_2 {
+		padding: 1%;
+	}
+		#DatosPersonales {
+			grid-column-start: 1;
+			grid-column-end: 2;
+			display: none;
+		}
+		#Objetivo {
+			grid-column-start: 1;
+			grid-column-end: 2;
+			display: none;
+		}
+		#Experiencia {
+			grid-column-start: 1;
+			grid-column-end: 2;
+			display: none;
+		}
+		#Idiomas {
+			grid-column-start: 1;
+			grid-column-end: 2;
+			display: none;
+		}
+		#Educacion {
+			grid-column-start: 1;
+			grid-column-end: 2;
+			display: none;
+		}
+		#Cursos {
+			grid-column-start: 1;
+			grid-column-end: 2;
+			display: none;
+	}
+
+footer {
+	border:2px solid #141313 ;
+	background-color: rgba(34, 110, 37, 0.575);
+	padding: 1%;
+	font-size: 110%;
+} */
+
+
+
+h3, p{
+	display: inline;
+ }
