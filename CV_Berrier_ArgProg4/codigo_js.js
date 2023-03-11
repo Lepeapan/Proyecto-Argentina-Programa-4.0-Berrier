@@ -55,7 +55,7 @@ window.onload = () => {ObtenerDatos()};
 
 // /** --------------------------Codigo para los botones de la barra lateral--------------------------------- */
 
-document.addEventListener('click', () => {document.getElementById("recibidor").style.display ='none'});
+document.addEventListener('click', () => {document.getElementById("recibidor").style.display ='none'}); /**se muestra un cartel que explica el funcionamiento de la botonera hasta realizar el primer click dentro de la pagina */
 
 function Contenido(ID){
   let elemento = document.getElementById(ID);
